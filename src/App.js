@@ -1,11 +1,13 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./index.css"
+import { ThemeProvider } from "./ThemeContext";
+import ContextComponent from "./ContextComponent";
 function App() {
 
   return(
-    <div className="App">
-      
-    </div>
+    <ThemeProvider>
+      <ContextComponent/>
+    </ThemeProvider>
   );
 }
 
